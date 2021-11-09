@@ -4,6 +4,8 @@
 
 .wrapper {
   display: grid;
+  border: 1px solid #000;
+  font-variant: small-caps;
 }
 
 /*# sourceMappingURL=style.css.map */
