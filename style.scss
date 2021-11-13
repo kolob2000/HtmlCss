@@ -1,54 +1,100 @@
-.spitz {
-  height: 300px;
-}
 *{
-  font-family: sans-serif;
+
+}
+@font-face {
+  font-family: "GTEestiProDisplay-Medium";
+
+  src: url("font/GTEestiProDisplay-Medium.ttf") format("TrueType");
+
+
+}
+@font-face {
+  font-family: "GTEestiProDisplay-Light";
+
+  src: url("font/GTEestiProDisplay-Light.ttf") format("TrueType");
+
+
+}
+.main_container{
+
+  font-family: GTEestiProDisplay-Medium;
+  color: #001A34;
+}
+.header{
+  margin: 2% 5% 2% 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.text{
+.logo{
+  height: 58px;
+  //margin-top: 33px;
+  //margin-left: 92px;
+}
+.menu{
+  width: 37%;
+  //margin-top: 49px;
+  //margin-left: 267px;
+  //margin-right: 244px;
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+
+}
+@media only screen and (max-width: 1024px) {
+  .menu{
+    display: none;
+  }
+
+}
+
+.menu_item a{
   font-size: 16px;
-  line-height: 26px;
-  color: #1F3F68;
-}
-
-.top_heading{
-  font-size: 64px;
-  color: #1F3F68;
-}
-
-.heading_2{
+  text-decoration: none;
+  color: #001A34;
+  font-style: normal;
   font-weight: 500;
-  font-size: 44px;
-  text-align: center;
-}
 
-.heading_3{
-  font-size: 36px;
-  text-align: center;
 }
-
-.heading_4{
-  font-size: 20px;
-  line-height: 30px;
-  color: #1F3F68
-}
-
-.text_field{
-  border: 1px solid #356EAD;
-  box-sizing: border-box;
-  border-radius: 10px;
-  opacity: 0.4;
-}
-
-.botton{
-  background: #5A98D0;
-  box-shadow: 5px 20px 50px rgba(16,112,177, 0.2);
-  border-radius: 10px;
+.slogan{
+  ////margin-top: 49px;
+  //margin-right: 92px;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
-  text-align: center;
-  color: #ffffff;
-  text-transform: uppercase;
+  font-size: 22px;
+}
+
+.promo{
+  position: relative;
+  display: flex;
+  background-image: url("img/promo.png");
+  height: 1000px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 5%;
+  margin-right: 5%;
+  align-items: center;
+  .promo_box{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    .promo_hading{
+      font-size: 58px;
+      font-weight: 700;
+      color: white;
+    }
+    .promo_text{
+      font-family: "GTEestiProDisplay-Light";
+      color: #fff;
+      font-size:24px
+    }
+    .promo_button{
+
+      background-color: #005bff;
+      color: #fff;
+    }
+  }
 
 }
