@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 @font-face {
   font-family: "GTEestiProDisplay-Medium";
   src: url("font/GTEestiProDisplay-Medium.ttf") format("TrueType");
@@ -33,6 +38,19 @@
   .menu {
     display: none;
   }
+
+  .slogan {
+    display: none;
+  }
+
+  .burger_img {
+    display: block;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .burger_anchor {
+    display: none;
+  }
 }
 .menu_item a {
   font-size: 16px;
@@ -42,42 +60,392 @@
   font-weight: 500;
 }
 
+.middle_item {
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
 .slogan {
   font-weight: 500;
   font-size: 22px;
 }
 
 .promo {
-  position: relative;
   display: flex;
   background-image: url("img/promo.png");
-  height: 1000px;
+  height: 708px;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-position: center;
+  background-size: cover;
   margin-left: 5%;
   margin-right: 5%;
   align-items: center;
 }
 .promo .promo_box {
+  min-width: 300px;
+  margin-left: 120px;
+  margin-top: 204px;
+  margin-bottom: 228px;
   width: 30%;
   display: flex;
   flex-direction: column;
-  position: absolute;
+  justify-content: flex-start;
   align-items: center;
 }
 .promo .promo_box .promo_hading {
+  font-style: normal;
+  font-weight: bold;
   font-size: 58px;
-  font-weight: 700;
+  line-height: 68px;
+  /* identical to box height, or 117% */
+  letter-spacing: 1px;
   color: white;
+  align-self: flex-start;
 }
 .promo .promo_box .promo_text {
   font-family: "GTEestiProDisplay-Light";
   color: #fff;
   font-size: 24px;
+  font-size: 24px;
+  line-height: 32px;
+  /* or 133% */
+  letter-spacing: 0.6px;
 }
 .promo .promo_box .promo_button {
+  text-decoration: none;
+  font-size: 22px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.7px;
+  width: 208px;
+  height: 64px;
+  border: none;
+  margin: 32px 0;
+  border-radius: 7px;
   background-color: #005bff;
   color: #fff;
+  align-self: flex-start;
+}
+
+.course {
+  margin-top: 80px;
+  padding-left: 213px;
+  padding-right: 211px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.course .course_heading {
+  font-weight: 500;
+  font-size: 46px;
+  line-height: 54px;
+  /* identical to box height, or 117% */
+  text-align: center;
+  letter-spacing: 0.8px;
+}
+.course .card_box {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.course .card_box .card_item {
+  background: #FFFFFF;
+  /* Dark space / 20 */
+  min-width: 376px;
+  border: 1px solid #E9EEF1;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 20px #E9EEF1;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 30%;
+  margin: 12px;
+}
+.course .card_box .card_item .card_heading {
+  text-align: center;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  /* identical to box height, or 117% */
+  letter-spacing: 0.6px;
+}
+.course .card_box .card_item .card_body {
+  padding: 32px 24px;
+}
+.course .card_box .card_item .card_text {
+  margin-top: 15px;
+  margin-bottom: 24px;
+  font-family: "GTEestiProDisplay-Light";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+  letter-spacing: 0.4px;
+}
+.course .card_box .card_item .card_link {
+  text-decoration: none;
+  font-family: "GTEestiProDisplay-Light";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.7px;
+  color: #005BFF;
+}
+
+.question {
+  display: flex;
+  background-image: url(img/question.png);
+  background-size: cover;
+  background-position: left;
+  height: 708px;
+  background-repeat: no-repeat;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-top: 80px;
+  justify-content: flex-end;
+}
+.question .question_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 182px 146px 182px 720px;
+  width: 550px;
+}
+.question .question_box .question_header {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 58px;
+  line-height: 68px;
+  /* or 117% */
+  letter-spacing: 1px;
+  /* White */
+  color: #FFFFFF;
+}
+.question .question_box .question_text {
+  font-family: "GTEestiProDisplay-Light";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.6px;
+  color: #FFFFFF;
+  margin-top: 16px;
+}
+.question .question_box .question_button {
+  font-family: "GTEestiProDisplay-Light";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.7px;
+  color: #FFFFFF;
+  width: 238px;
+  height: 64px;
+  border: none;
+  border-radius: 7px;
+  background-color: #005bff;
+  margin-top: 32px;
+  min-width: 300px;
+}
+
+@media only screen and (max-width: 768px) {
+  .question {
+    justify-content: center;
+  }
+
+  .question .question_box {
+    margin-left: 15px;
+    margin-right: 10px;
+  }
+}
+.advantages {
+  margin: 80px 284px 106px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.advantages .advantages_heading {
+  font-weight: 500;
+  font-size: 46px;
+  line-height: 54px;
+  /* identical to box height, or 117% */
+  text-align: center;
+  letter-spacing: 0.8px;
+}
+.advantages .advantages_list {
+  display: flex;
+  margin-top: 64px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.advantages .advantages_list .advantages_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 240px;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+.advantages .advantages_list .advantages_item .advantages_img_item {
+  width: 72px;
+  height: 56px;
+}
+.advantages .advantages_list .advantages_item .advantages_heading_item {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.6px;
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+.advantages .advantages_list .advantages_item .advantages_text_item {
+  font-family: "GTEestiProDisplay-Light";
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+  /* or 144% */
+  text-align: center;
+  letter-spacing: 0.4px;
+}
+
+.application {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #EFF3F6;
+}
+.application .application_form_top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.application .application_heading {
+  font-weight: 500;
+  font-size: 46px;
+  line-height: 54px;
+  text-align: center;
+  letter-spacing: 0.8px;
+  margin: 80px 92px 64px;
+  text-justify: distribute;
+}
+.application .application_form {
+  height: 496px;
+  width: 456px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.application .application_form .application_form_field {
+  border: 1px solid #B2BAC2;
+  box-sizing: border-box;
+  border-radius: 6px;
+  height: 56px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  /* identical to box height, or 133% */
+  letter-spacing: 0.7px;
+  /* Dark space / 90 */
+  color: #1A3047;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.application .application_form .application_form_select {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  /* identical to box height, or 133% */
+  letter-spacing: 0.7px;
+  /* Dark space / 90 */
+  color: #667585;
+  border-radius: 6px;
+  height: 56px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  appearance: none;
+  background: url("img/Vector 16.svg") no-repeat #FFFFFF;
+  background-position: 424px 23px;
+}
+.application .application_form .application_form_textarea {
+  border-radius: 6px;
+  max-height: 56px;
+  padding-left: 20px;
+  padding-top: 16px;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  /* identical to box height, or 133% */
+  letter-spacing: 0.7px;
+  /* Dark space / 70 */
+  color: #667585;
+  resize: none;
+}
+.application .application_button {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.7px;
+  color: #FFFFFF;
+  width: 253px;
+  height: 64px;
+  background: #005BFF;
+  border-radius: 8px;
+  border: none;
+  margin-top: 64px;
+  margin-bottom: 80px;
+}
+.application input[type=text]::placeholder {
+  color: #001A34;
+}
+.application input[type=tel]::placeholder {
+  color: #001A34;
+}
+.application input[type=email]::placeholder {
+  color: #001A34;
+}
+
+.footer .footer_menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 220px;
+}
+.footer .footer_menu .footer_logo {
+  width: 181px;
+  height: 58px;
+}
+.footer .footer_menu .footer_rights {
+  font-family: "GTEestiProDisplay-Light";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.4px;
+  color: #001A34;
+}
+.footer .footer_menu .footer_social {
+  list-style-type: none;
+  display: flex;
+  width: 181px;
+  justify-content: space-between;
+}
+.footer .footer_menu .footer_social .social_img {
+  width: 37.45px;
+  height: 37.45px;
 }
 
 /*# sourceMappingURL=style.css.map */

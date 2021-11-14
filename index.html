@@ -6,18 +6,20 @@
           name="viewport">
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
     <link href="style.css" rel="stylesheet">
-    <title>Document</title>
+    <link href="img/favicon.svg" rel="shortcut icon" type="image/svg">
+    <title>Ozon New Skills</title>
 </head>
 <body>
 <div class="main_container">
     <div class="header">
-        <img alt="" class="logo" src="img/logo.png">
+        <a href=""><img alt="" class="logo" src="img/logo.png"></a>
         <ul class="menu">
             <li class="menu_item"><a class="menu_link" href="">Бизнес-аналитика</a></li>
-            <li class="menu_item"><a class="menu_link" href="">Python 18+</a></li>
+            <li class="menu_item middle_item"><a class="menu_link" href="">Python 18+</a></li>
             <li class="menu_item"><a class="menu_link" href="">Frontend-разработчик</a></li>
         </ul>
         <h3 class="slogan">Это вам не Школа!</h3>
+        <a href="" class="burger_anchor"><img alt="" class="burger_img" src="/img/burger.svg"></a>
 
     </div>
     <div class="promo">
@@ -28,6 +30,114 @@
                 или дадут старт новой!
             </div>
             <button class="promo_button">Выбрать курс</button>
+        </div>
+    </div>
+    <div class="course">
+        <div class="course_heading">Наши курсы</div>
+        <div class="card_box">
+            <!--            ===========================================-->
+
+            <div class="card_item">
+                <img alt="" class="card_img" src="img/card_1.png">
+                <div class="card_body">
+                    <span class="card_heading">Бизнес-аналитика</span>
+                    <p class="card_text">Изучение основных инструментов и механизмов бизнес-аналитики</p>
+                    <a class="card_link" href="">Узнать больше</a>
+                </div>
+            </div>
+            <!--            ==============================================-->
+
+            <div class="card_item card_middle">
+                <img alt="" class="card_img" src="img/card_2.png">
+                <div class="card_body">
+                    <span class="card_heading">Python 18+</span>
+                    <p class="card_text">Основы программирования и знакомство с возможностями языка Python</p>
+                    <a class="card_link" href="">Узнать больше</a>
+                </div>
+            </div>
+            <div class="card_item">
+                <img alt="" class="card_img" src="img/card_3.png">
+                <div class="card_body">
+                    <span class="card_heading">Frontend-разработчик</span>
+                    <p class="card_text">Курс для новичков, которые хотят начать свой путь в Frontend-разработке</p>
+                    <a class="card_link" href="">Узнать больше</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="question">
+        <div class="question_box">
+            <div class="question_header">Сложно определиться?</div>
+            <div class="question_text">Оставьте контактные данные
+                и наши специалисты помогут понять,
+                что вам ближе.
+            </div>
+            <button class="question_button">Оставить заявку</button>
+        </div>
+    </div>
+    <div class="advantages">
+        <div class="advantages_heading">Преимущества</div>
+        <div class="advantages_list">
+            <div class="advantages_item">
+                <img alt="" class="advantages_img_item" src="img/cup.svg">
+                <div class="advantages_heading_item">Лидерство</div>
+                <div class="advantages_text_item">Образовательный проект от лидера российского e-com</div>
+            </div>
+
+            <div class="advantages_item">
+                <img alt="" class="advantages_img_item" src="img/Expert.svg">
+                <div class="advantages_heading_item">Экспертиза</div>
+                <div class="advantages_text_item">Преподаватели
+                    с уникальным опытом
+                </div>
+            </div>
+            <div class="advantages_item">
+                <img alt="" class="advantages_img_item" src="img/clock%202.svg">
+                <div class="advantages_heading_item">Актуальность</div>
+                <div class="advantages_text_item">Погружение в мир современных профессий</div>
+            </div>
+            <div class="advantages_item">
+                <img alt="" class="advantages_img_item" src="img/human.svg">
+                <div class="advantages_heading_item">Кураторы</div>
+                <div class="advantages_text_item">Поддержка преподавателя и куратора на всех этапах обучения</div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="application">
+        <div class="application_heading">
+            Оставить заявку <br>на бесплатное пробное занятие
+        </div>
+        <form action="https://google.com" class="application_form_top" method="get">
+            <div class="application_form">
+                <input class="application_form_field" placeholder="Город" type="text">
+                <input class="application_form_field" placeholder="+7" type="tel">
+                <input class="application_form_field" placeholder="E-mail" type="email">
+                <input class="application_form_field" placeholder="Имя и фамилия" type="text">
+                <select class="application_form_select" id="select" name="">
+                    <option disabled selected value="">Выберите курс</option>
+                </select>
+                <textarea class="application_form_textarea" id="comment" name=""
+                          placeholder="Комментарий"></textarea>
+            </div>
+            <button class="application_button">Отправить заявку</button>
+        </form>
+    </div>
+    <div class="footer">
+        <div class="footer_menu">
+            <a href=""><img alt="" class="footer_logo" src="/img/logo.png"></a>
+            <p class="footer_rights">&copy; 2019 ООО «Интернет Решения». Все права защищены. <br>
+                Москва, Пресненская наб., 10, блок С<br>
+                ons@ozon.ru</p>
+            <ul class="footer_social">
+                <li class="social_item"><a href=""><img alt="" class="social_img" src="img/Insta.svg"></a></li>
+                <li class="social_item"><a href=""><img alt="" class="social_img" src="img/Facebook.svg"></a></li>
+                <li class="social_item"><a href=""><img alt="" class="social_img" src="img/VK.svg"></a></li>
+                <li class="social_item"><a href=""><img alt="" class="social_img" src="img/Youtube.svg"></a></li>
+            </ul>
+            <a class="footer_ozon" href=""><img alt="" src="img/ozon.svg"></a>
         </div>
     </div>
 </div>
