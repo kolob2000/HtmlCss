@@ -1,14 +1,3 @@
-.project {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.project .project_gallary {
-  background-image: url(../img/big.png);
-  height: 480px;
-  border: none;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
+
 
 /*# sourceMappingURL=project.css.map */
