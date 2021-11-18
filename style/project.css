@@ -1,3 +1,48 @@
+.project {
+  margin-bottom: 112px;
+}
 
+.project_heading {
+  margin-bottom: 32px;
+}
+
+.project_text {
+  width: 75%;
+  text-align: center;
+  color: #222222 !important;
+  opacity: 1 !important;
+  margin: 0 auto 64px;
+}
+
+.project_parent {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+
+.project_item {
+  position: relative;
+  flex-grow: 1;
+}
+
+.project_heading_3 {
+  position: absolute;
+  top: 64px;
+  left: 681px;
+}
+
+.project_heading_3_1 {
+  position: absolute;
+  left: 32px;
+  top: 32px;
+}
+
+.item_margin {
+  margin-right: 32px;
+}
+
+.project_img {
+  width: 100%;
+}
 
 /*# sourceMappingURL=project.css.map */

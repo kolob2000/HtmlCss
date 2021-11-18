@@ -1,3 +1,40 @@
+.what_we_do {
+  margin-bottom: 64px;
+}
 
+.what_we_do_heading {
+  margin-top: 64px;
+}
+
+.cards {
+  margin-top: 64px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card_item {
+  display: flex;
+  flex-direction: column;
+  width: 359px;
+  height: 480.13px;
+  box-sizing: border-box;
+  padding: 44px 32px 0;
+  box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+  border-radius: 10px;
+}
+
+.card_img {
+  align-self: center;
+}
+
+.card_heading {
+  margin-top: 52px;
+}
+
+.card_text {
+  margin-top: 14px;
+  margin-bottom: 30px;
+}
 
 /*# sourceMappingURL=what_we_do.css.map */

@@ -1,3 +1,51 @@
+.header {
+  height: 768px;
+  background: linear-gradient(0deg, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
+}
 
+.header_container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.header_menu {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 34px;
+  list-style-type: none;
+}
+
+.hero {
+  flex-grow: 1;
+  padding-top: 107px;
+  background: url(../img/hero.png) right center no-repeat;
+}
+
+.hero_heading {
+  margin-bottom: 32px;
+  width: 510px;
+  height: 148px;
+}
+
+.hero_text {
+  margin-bottom: 71px;
+  width: 425px;
+  height: 82px;
+}
+
+.hero_button {
+  display: inline-block;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+  width: 220px;
+  height: 56px;
+  box-sizing: border-box;
+  padding: 15px 50px;
+  background: #5A98D0;
+  box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+  border-radius: 10px;
+}
 
 /*# sourceMappingURL=header.css.map */
