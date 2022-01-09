@@ -1,0 +1,94 @@
+.practice {
+  margin: 0 auto;
+  max-width: 1920px;
+  height: 1075px;
+  background-image: url(../img/practice.png);
+  padding-bottom: 61px;
+}
+
+.practice_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 1075px;
+  background: url("../img/practice_girl.png") no-repeat 0 395px;
+
+
+}
+
+.practice_heading {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 54px;
+  line-height: 130%;
+  text-align: center;
+  color: #000000;
+  width: 706px;
+  height: 140px;
+  margin-top: 77px;
+  margin-bottom: 22px;
+}
+
+.practice_text {
+  width: 1106px;
+  height: 62px;
+  text-align: center;
+
+
+}
+
+.practice_bottom {
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 105px;
+
+}
+
+.practice_item {
+  padding: 40px 40px 23px 40px;
+  width: 700px;
+  height: 157px;
+
+
+}
+
+.practice_item:hover .practice_item_arrow {
+  transition: display 2s ease-in-out;
+  display: inline-block;
+
+}
+
+.practice_item:hover {
+  background-image: url(../img/meditationwind.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  //background-position: -5 -10;
+  transition: background 2s ease-in-out;
+  box-shadow: 0px 8px 50px rgba(26, 127, 114, 0.2);
+  border-radius: 15px;
+
+}
+
+
+.practice_item_heading {
+  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 10px;
+}
+
+.practice_item_text {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.practice_item_arrow {
+  display: none;
+  width: 100%;
+  background-image: url(../img/arrow.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+
+}
+
+
